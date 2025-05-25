@@ -7,7 +7,7 @@ name = "iss-mcp-server"
 version = "1.0.0"
 description = "A Model Context Protocol server providing access to International Space Station telemetry data"
 readme = "README.md"
-license = {text = "MIT"}
+license = "MIT"
 authors = [
     {name = "ISS MCP Server Contributors"}
 ]
@@ -45,10 +45,10 @@ dev = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/yourusername/iss-mcp-server"
-Repository = "https://github.com/yourusername/iss-mcp-server"
-Issues = "https://github.com/yourusername/iss-mcp-server/issues"
-Documentation = "https://github.com/yourusername/iss-mcp-server#readme"
+Homepage = "https://github.com/andrewhuang/iss_mcp"
+Repository = "https://github.com/andrewhuang/iss_mcp"
+Issues = "https://github.com/andrewhuang/iss_mcp/issues"
+Documentation = "https://github.com/andrewhuang/iss_mcp#readme"
 
 [project.scripts]
 iss-mcp-server = "iss_mcp_server:main"
