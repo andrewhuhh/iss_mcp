@@ -175,6 +175,11 @@ Desktop.ini
 iss_telemetry_*.json
 telemetry_data_*.json
 
+# Build artifacts
+build/
+dist/
+*.egg-info/
+
 # Temporary files
 *.tmp
 *.temp 

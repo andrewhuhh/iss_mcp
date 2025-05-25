@@ -9,7 +9,7 @@ import asyncio
 import json
 from fastmcp import Client
 
-async def main():
+async def run_client_demo():
     """Main client function to demonstrate ISS MCP server usage"""
     
     # Connect to the ISS MCP server
@@ -95,5 +95,9 @@ async def main():
         
         print("\n✅ ISS Telemetry MCP Server demonstration complete!")
 
+def main():
+    """Console script entry point for the ISS MCP client example"""
+    asyncio.run(run_client_demo())
+
 if __name__ == "__main__":
-    asyncio.run(main()) 
+    main() 

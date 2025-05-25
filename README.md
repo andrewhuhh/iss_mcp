@@ -27,7 +27,41 @@ A Model Context Protocol (MCP) server that provides access to International Spac
 - Python 3.8 or higher
 - pip (Python package installer)
 
-### Setup
+### Option 1: Install via uvx (Recommended)
+
+The easiest way to install and run the ISS MCP server is using `uvx`:
+
+```bash
+# Install uvx if you don't have it
+pip install uvx
+
+# Install and run the ISS MCP server
+uvx iss-mcp-server
+
+# Or install from GitHub (once published)
+uvx --from git+https://github.com/yourusername/iss-mcp-server iss-mcp-server
+
+# Run the client example
+uvx --from git+https://github.com/yourusername/iss-mcp-server iss-mcp-client-example
+```
+
+### Option 2: Install via pipx
+
+```bash
+# Install pipx if you don't have it
+pip install pipx
+
+# Install from GitHub
+pipx install git+https://github.com/yourusername/iss-mcp-server
+
+# Run the server
+iss-mcp-server
+
+# Run the client example
+iss-mcp-client-example
+```
+
+### Option 3: Local Development Setup
 
 1. **Clone the repository:**
    ```bash
@@ -51,7 +85,29 @@ A Model Context Protocol (MCP) server that provides access to International Spac
    pip install -r requirements.txt
    ```
 
+4. **Install in development mode:**
+   ```bash
+   pip install -e .
+   ```
+
 ## 🚀 Usage
+
+### After uvx/pipx Installation
+
+Once installed via uvx or pipx, you can use the console commands:
+
+```bash
+# Run the MCP server
+iss-mcp-server
+
+# Run in test mode to see sample data
+iss-mcp-server --test
+
+# Run the client example
+iss-mcp-client-example
+```
+
+### Local Development Usage
 
 ### Running the MCP Server
 

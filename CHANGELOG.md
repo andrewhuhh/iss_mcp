@@ -21,6 +21,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Comprehensive documentation and README
 - MIT License
 - Python virtual environment support
+- **uvx/pipx installation support** with console scripts
+- Proper Python package structure with `pyproject.toml`
 
 ### Technical Details
 - Built with FastMCP SDK (>=2.2.10)
@@ -29,6 +31,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Async/await support throughout
 - Proper error handling and logging
 - Type hints and documentation strings
+- Console script entry points for easy installation
+
+### Installation Options
+- uvx installation: `uvx iss-mcp-server`
+- pipx installation: `pipx install git+https://github.com/yourusername/iss-mcp-server`
+- Local development setup with virtual environments
+- Direct script execution
 
 ### Documentation
 - Complete README with installation and usage instructions
